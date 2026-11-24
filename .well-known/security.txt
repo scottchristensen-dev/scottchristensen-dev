@@ -1,0 +1,5 @@
+# Managed by Website Studio
+Contact: mailto:scott@scottchristensen.dev
+Expires: 2027-11-21T00:00:00Z
+Preferred-Languages: en
+Canonical: https://scottchristensen.dev/.well-known/security.txt

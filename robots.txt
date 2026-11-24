@@ -1,2 +1,7 @@
+# Managed by Website Studio
+# Everyone is welcome, search engines and AI readers included.
 User-agent: *
 Allow: /
+
+# Plain summary for AI readers: https://scottchristensen.dev/llms.txt
+Sitemap: https://scottchristensen.dev/sitemap.xml
