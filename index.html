@@ -41,8 +41,8 @@
 <main id="main">
 <!-- block:hero -->
 <section class="hero"><h1>Scott Christensen</h1>
-<p class="pitch">IT support technician with hands-on computer repair since 2010. I build, test and run my own software on a self-managed Linux server, and I document every fix so it is solved once. I&#x27;m looking for help desk and IT field technician work, and I&#x27;m currently studying for CompTIA A+.</p>
-<p><a class="btn" href="contact.html">Contact me</a> <a class="btn ghost" href="projects.html">See my projects</a></p></section>
+<p class="pitch">I&#x27;m looking for help desk and IT field technician work. I&#x27;ve repaired computers hands-on since 2010, and I build, test and run my own software on a self-managed Linux server. I document every fix so it is solved once. CompTIA A+ in progress.</p>
+<p><a class="btn" href="contact.html">Contact me</a> <a class="btn ghost" href="projects.html">See my projects</a> <a class="btn ghost" href="assets/resume.pdf">Résumé (PDF)</a></p></section>
 <!-- /block -->
 
 <!-- block:projects -->
@@ -74,11 +74,13 @@
 <p><strong>Lab notes:</strong> <a href="case-unit-not-found.html">systemd</a> · <a href="case-real-https-from-phone-to-server.html">HTTPS to my phone</a> · <a href="case-docker-and-localhost.html">Docker and localhost</a> · <a href="case-keeping-api-keys-out-of-plain-text.html">Secrets</a> · <a href="case-the-server-that-couldn-t-find-itself.html">DNS trap</a> · <a href="case-works-on-my-machine.html">Works on my machine</a></p>
 </details></article>
 <article class="card"><h3>Automated trading system (personal)</h3>
+<figure><img src="assets/img/cs03-diagram.webp" width="980" height="799" loading="lazy" alt="A failed price lookup was counted as zero, which set off a false high-risk alarm."></figure>
 <p><strong>What it does:</strong> A self-hosted system that monitors and manages my brokerage and crypto accounts, with daily caps, kill switches and shadow-first rollouts. Built with Claude under my direction.</p>
 <details><summary>Stack and a real fix</summary>
 <p><strong>Stack:</strong> Python, SQLite, systemd, cron, Kraken API, Anthropic API.</p>
 <p><strong>A real problem it solved:</strong> Repeated false high-risk alerts came from failed price reads being counted as zero. I added a retry and a last-good-value guard, backed by 12 new tests.</p>
-</details></article>
+</details>
+<p><a class="btn ghost" href="case-when-zero-isn-t-zero.html">The false-alarm fix →</a></p></article>
 </div></section>
 <!-- /block -->
 
