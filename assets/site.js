@@ -34,3 +34,19 @@
     if(!zoomable(i)) return; i.tabIndex=0; i.setAttribute('role','button'); if(!i.title) i.title='Tap to enlarge'; }); }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',mark); else mark();
 })();
+
+/* Looping clips (2026-11-25): a ⏸ button on each; visitors who ask for reduced motion get the still picture. */
+(function(){
+  function set(v,b,play){ if(play){ var p=v.play(); if(p&&p.catch) p.catch(function(){}); } else v.pause();
+    b.textContent=play?'⏸':'▶'; b.setAttribute('aria-label',play?'Pause the clip':'Play the clip'); }
+  function init(){
+    var still=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+    Array.prototype.forEach.call(document.querySelectorAll('video[data-loop]'),function(v){
+      var b=document.createElement('button'); b.type='button'; b.className='lp';
+      v.parentNode.insertBefore(b,v.nextSibling);
+      if(still){ v.removeAttribute('autoplay'); set(v,b,false); } else set(v,b,!v.paused||v.autoplay);
+      b.addEventListener('click',function(){ set(v,b,v.paused); });
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init); else init();
+})();
