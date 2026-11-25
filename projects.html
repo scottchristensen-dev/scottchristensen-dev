@@ -114,22 +114,22 @@
 <section id="troubleshoot"><h2>How I troubleshoot</h2>
 <p>Real incidents, start to finish.</p>
 <div class="grid"><article class="card"><img src="assets/img/cs01-diagram.webp" width="980" height="579" loading="lazy" alt=""><h3>The green health check that lied</h3>
-<p>Live outage with a green health check — traced, fixed, and guarded so it can&#x27;t recur.</p>
+<p>A live outage behind a passing health check — traced, fixed and guarded against recurrence.</p>
 <p><a class="btn ghost" href="case-the-green-health-check-that-lied.html">Read the case study →</a></p></article>
 <article class="card"><img src="assets/img/cs02-diagram.webp" width="980" height="426" loading="lazy" alt=""><h3>The tests passed. The button didn't.</h3>
-<p>All tests green, button dead — found by a real click-through and locked down with a guard test.</p>
+<p>All automated tests passed, but a button did nothing — found by a manual walk-through and prevented with a guard test.</p>
 <p><a class="btn ghost" href="case-the-tests-passed-the-button-didn-t.html">Read the case study →</a></p></article></div>
 <details class="more"><summary>Show 2 more cases (When zero isn't zero, Zero results, no error)</summary><div class="grid"><article class="card"><img src="assets/img/cs03-diagram.webp" width="980" height="799" loading="lazy" alt=""><h3>When zero isn't zero</h3>
 <p>False high-risk alerts traced to failed price reads counted as zero — fixed with a retry, a guard and 12 tests.</p>
 <p><a class="btn ghost" href="case-when-zero-isn-t-zero.html">Read the case study →</a></p></article>
 <article class="card"><img src="assets/img/cs04-diagram.webp" width="980" height="426" loading="lazy" alt=""><h3>Zero results, no error</h3>
-<p>A scanner silently showed nothing on my phone — traced to a duplicate function name; 81 results after the fix.</p>
+<p>A scanner returned no results without an error — traced to a duplicate function name; 81 results after the fix.</p>
 <p><a class="btn ghost" href="case-zero-results-no-error.html">Read the case study →</a></p></article></div></details></section>
 <!-- /block -->
 <!-- block:lab-notes -->
 <section id="lab-notes"><h2>Home server lab notes</h2>
 <p>Short Linux admin write-ups from running my own server.</p>
-<ul class="links"><li><a href="case-unit-not-found.html">“Unit not found” doesn&#x27;t always mean “not installed”</a> <span>— systemd&#x27;s two managers, a stray process holding a port, and an error that pointed the wrong way.</span></li><li><a href="case-real-https-from-phone-to-server.html">Ending “cleartext not permitted” — real HTTPS from phone to home server</a> <span>— Private-network HTTPS with a real certificate — no IP baked into the app, no rebuilds.</span></li><li><a href="case-docker-and-localhost.html">Why my service couldn&#x27;t see “localhost” inside Docker</a> <span>— Docker&#x27;s port forwarding hid local requests — moved the service to a host systemd unit.</span></li><li><a href="case-keeping-api-keys-out-of-plain-text.html">Keeping API keys out of plain text</a> <span>— Every API key in HashiCorp Vault — rotate from a screen, never shown back, unseals at boot.</span></li><li><a href="case-the-server-that-couldn-t-find-itself.html">The server that couldn&#x27;t find itself — a DNS trap</a> <span>— A hand-managed resolver file from an old VPN fix — and why I didn&#x27;t just undo it.</span></li><li><a href="case-works-on-my-machine.html">“Works on my machine” — why remote devices couldn&#x27;t reach my tools</a> <span>— Links that only worked on the server — fixed with a same-address allow-list and a regression test.</span></li></ul></section>
+<ul class="links"><li><a href="case-unit-not-found.html">“Unit not found” doesn&#x27;t always mean “not installed”</a> <span>— systemd&#x27;s two managers, a stray process holding a port, and an error that pointed the wrong way.</span></li><li><a href="case-real-https-from-phone-to-server.html">Ending “cleartext not permitted” — real HTTPS from phone to home server</a> <span>— Private-network HTTPS with a real certificate — no IP baked into the app, no rebuilds.</span></li><li><a href="case-docker-and-localhost.html">Why my service couldn&#x27;t see “localhost” inside Docker</a> <span>— Docker&#x27;s port forwarding hid local requests — moved the service to a host systemd unit.</span></li><li><a href="case-keeping-api-keys-out-of-plain-text.html">Keeping API keys out of plain text</a> <span>— Every API key in HashiCorp Vault — rotate from a screen, never shown back, unseals at boot.</span></li><li><a href="case-the-server-that-couldn-t-find-itself.html">The server that couldn&#x27;t find itself — a DNS trap</a> <span>— A hand-managed resolver file from an earlier VPN fix, and why it was not simply reverted.</span></li><li><a href="case-works-on-my-machine.html">“Works on my machine” — why remote devices couldn&#x27;t reach my tools</a> <span>— Links that worked only on the server — fixed with a same-address allow-list and a regression test.</span></li></ul></section>
 <!-- /block -->
 </main>
 <footer><p>© Scott Christensen · <a href="mailto:scott@scottchristensen.dev">scott@scottchristensen.dev</a></p><!-- hx:fsocial --><p><span class="social" aria-label="Profiles"><a href="https://github.com/erasmus707bot-dev" rel="me noopener">GitHub</a></span></p><!-- /hx:fsocial -->
