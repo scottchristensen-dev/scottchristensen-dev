@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The green health check that lied — case study — Scott Christensen</title>
-<meta name="description" content="ProReady (then called SonoVault) went down while its health check stayed green. How I traced it, fixed it and added two guards.">
+<meta name="description" content="ProReady went down while its health check stayed green. How I traced it, fixed it and added two guards.">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/site.js"></script>
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Scott Christensen — portfolio">
 <meta property="og:title" content="The green health check that lied — case study — Scott Christensen">
-<meta property="og:description" content="ProReady (then called SonoVault) went down while its health check stayed green. How I traced it, fixed it and added two guards.">
+<meta property="og:description" content="ProReady went down while its health check stayed green. How I traced it, fixed it and added two guards.">
 <meta property="og:image" content="https://scottchristensen.dev/assets/share.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -22,14 +22,14 @@
 <link rel="canonical" href="https://scottchristensen.dev/case-the-green-health-check-that-lied.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The green health check that lied — case study — Scott Christensen">
-<meta name="twitter:description" content="ProReady (then called SonoVault) went down while its health check stayed green. How I traced it, fixed it and added two guards.">
+<meta name="twitter:description" content="ProReady went down while its health check stayed green. How I traced it, fixed it and added two guards.">
 <meta name="twitter:image" content="https://scottchristensen.dev/assets/share.png">
 <meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; img-src &#x27;self&#x27; data:; media-src &#x27;self&#x27;; style-src &#x27;self&#x27;; script-src &#x27;self&#x27;; font-src &#x27;self&#x27;; manifest-src &#x27;self&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#f5f2ec" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0d1520" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<script type="application/ld+json" id="hx-ai-page">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://scottchristensen.dev/#website","url":"https://scottchristensen.dev/","name":"Scott Christensen — portfolio","inLanguage":"en","publisher":{"@id":"https://scottchristensen.dev/#person"}},{"@type":"Person","@id":"https://scottchristensen.dev/#person","name":"Scott Christensen","url":"https://scottchristensen.dev/","sameAs":["https://github.com/erasmus707bot-dev"]},{"@id":"https://scottchristensen.dev/case-the-green-health-check-that-lied.html#page","url":"https://scottchristensen.dev/case-the-green-health-check-that-lied.html","name":"The green health check that lied — case study — Scott Christensen","isPartOf":{"@id":"https://scottchristensen.dev/#website"},"inLanguage":"en","description":"ProReady (then called SonoVault) went down while its health check stayed green. How I traced it, fixed it and added two guards.","dateModified":"2026-11-25","@type":"TechArticle","headline":"The green health check that lied","author":{"@id":"https://scottchristensen.dev/#person"},"mainEntityOfPage":"https://scottchristensen.dev/case-the-green-health-check-that-lied.html","image":"https://scottchristensen.dev/assets/img/cs01-diagram.webp"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://scottchristensen.dev/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://scottchristensen.dev/projects.html"},{"@type":"ListItem","position":3,"name":"The green health check that lied","item":"https://scottchristensen.dev/case-the-green-health-check-that-lied.html"}]}]}</script>
+<script type="application/ld+json" id="hx-ai-page">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://scottchristensen.dev/#website","url":"https://scottchristensen.dev/","name":"Scott Christensen — portfolio","inLanguage":"en","publisher":{"@id":"https://scottchristensen.dev/#person"}},{"@type":"Person","@id":"https://scottchristensen.dev/#person","name":"Scott Christensen","url":"https://scottchristensen.dev/","sameAs":["https://github.com/erasmus707bot-dev"]},{"@id":"https://scottchristensen.dev/case-the-green-health-check-that-lied.html#page","url":"https://scottchristensen.dev/case-the-green-health-check-that-lied.html","name":"The green health check that lied — case study — Scott Christensen","isPartOf":{"@id":"https://scottchristensen.dev/#website"},"inLanguage":"en","description":"ProReady went down while its health check stayed green. How I traced it, fixed it and added two guards.","dateModified":"2026-11-25","@type":"TechArticle","headline":"The green health check that lied","author":{"@id":"https://scottchristensen.dev/#person"},"mainEntityOfPage":"https://scottchristensen.dev/case-the-green-health-check-that-lied.html","image":"https://scottchristensen.dev/assets/img/cs01-diagram.webp"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://scottchristensen.dev/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://scottchristensen.dev/projects.html"},{"@type":"ListItem","position":3,"name":"The green health check that lied","item":"https://scottchristensen.dev/case-the-green-health-check-that-lied.html"}]}]}</script>
 <!-- /hx:head -->
 </head>
 <body>
@@ -41,7 +41,7 @@
 <!-- block:cs-intro -->
 <section class="hero"><h1>The green health check that lied</h1>
 <p class="pitch">A live outage the monitoring missed — and the backup test that couldn&#x27;t fail.</p>
-<p><strong>Project:</strong> ProReady (formerly SonoVault) · built with Claude under my direction</p>
+<p><strong>Project:</strong> ProReady · built with Claude under my direction</p>
 <p><a class="btn ghost" href="projects.html">← All projects</a></p></section>
 <!-- /block -->
 

@@ -135,7 +135,7 @@
  "projects": [
   {
    "name": "ProReady",
-   "description": "Study platform for certification exams (formerly SonoVault) — multi-subject course packs, spaced-repetition review (FSRS), instructor review queue, encrypted content storage, and a full CompTIA A+ course. Built with Claude under my direction.",
+   "description": "Study platform for certification exams — multi-subject course packs, spaced-repetition review (FSRS), instructor review queue, encrypted content storage, and a full CompTIA A+ course. Built with Claude under my direction.",
    "keywords": [
     "Next.js",
     "TypeScript",

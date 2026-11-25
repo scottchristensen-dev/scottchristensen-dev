@@ -22,7 +22,7 @@ Contact: scott@scottchristensen.dev
 - Volunteer PE Instructor — Local schools (–present)
 
 ## Projects
-- ProReady: Study platform for certification exams (formerly SonoVault) — multi-subject course packs, spaced-repetition review (FSRS), instructor review queue, encrypted content storage, and a full CompTIA A+ course. Built with Claude under my direction.
+- ProReady: Study platform for certification exams — multi-subject course packs, spaced-repetition review (FSRS), instructor review queue, encrypted content storage, and a full CompTIA A+ course. Built with Claude under my direction.
 - Home server: Linux Mint server running my apps, Docker services, local AI models and document archiving.
 - Hermes: Self-hosted platform of AI-assisted tools (website, image and app-building studios, a phone companion app, a job-search hub) running on my own Linux server. Built with Claude under my direction.
 - Automated trading system (personal): Self-hosted system that monitors and manages my brokerage and crypto accounts with daily caps, kill switches and shadow-first rollouts. Built with Claude under my direction.
@@ -46,9 +46,9 @@ Contact: scott@scottchristensen.dev
 - [Iris](https://scottchristensen.dev/case-iris.html): Iris: an Android companion app for my home server — voice notes, photos, GPS trips and screen recording, with receipts so nothing is lost.
 - [Keeping API keys out of plain text](https://scottchristensen.dev/case-keeping-api-keys-out-of-plain-text.html): A security lab note: keeping AI provider keys in HashiCorp Vault with no plain-text fallback.
 - [Omnibus](https://scottchristensen.dev/case-omnibus.html): Omnibus: an Android audiobook player with its own sync server, read-along text and spoiler-safe story help.
-- [ProReady](https://scottchristensen.dev/case-proready.html): ProReady (formerly SonoVault): a certification study platform, tested with a full CompTIA A+ course, study games, diagrams and mock exams.
+- [ProReady](https://scottchristensen.dev/case-proready.html): ProReady: a certification study platform, tested with a full CompTIA A+ course, study games, diagrams and mock exams.
 - [Ending “cleartext not permitted”](https://scottchristensen.dev/case-real-https-from-phone-to-server.html): A networking lab note: moving a phone app from plain HTTP and a baked-in IP to HTTPS on a private network.
-- [The green health check that lied](https://scottchristensen.dev/case-the-green-health-check-that-lied.html): ProReady (then called SonoVault) went down while its health check stayed green. How I traced it, fixed it and added two guards.
+- [The green health check that lied](https://scottchristensen.dev/case-the-green-health-check-that-lied.html): ProReady went down while its health check stayed green. How I traced it, fixed it and added two guards.
 - [The server that couldn't find itself](https://scottchristensen.dev/case-the-server-that-couldn-t-find-itself.html): A DNS lab note: a server that couldn't resolve its own private-network name, and the safe fix.
 - [The tests passed. The button didn't.](https://scottchristensen.dev/case-the-tests-passed-the-button-didn-t.html): Every automated test passed, but the Add image button did nothing. A nested form, found by a real click-through.
 - [“Unit not found” doesn't always mean “not installed”](https://scottchristensen.dev/case-unit-not-found.html): A systemd lab note: why “Unit not found” can mean you asked the wrong manager, and how a stray process hid behind a restart limit.
