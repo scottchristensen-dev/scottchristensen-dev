@@ -40,7 +40,7 @@
 <main id="main">
 <!-- block:cs-intro -->
 <section class="hero"><h1>“Unit not found” doesn&#x27;t always mean “not installed”</h1>
-<p class="pitch">Two systemd managers, one stray process, and an error message that pointed the wrong way.</p>
+<p class="pitch">Two systemd managers, a stray process, and a misleading error message.</p>
 <p><a class="btn ghost" href="projects.html">← All projects</a></p></section>
 <!-- /block -->
 
@@ -55,13 +55,13 @@
 <!-- /block -->
 
 <!-- block:cs-s3 -->
-<section><h2>Second trap</h2>
+<section><h2>A second issue</h2>
 <p>A hand-started copy of the dashboard was still holding its port. The proper service kept crashing with “address already in use.” After five tries, systemd&#x27;s restart limit locked it into “start request repeated too quickly” — which looks like a broken unit, not a busy port.</p></section>
 <!-- /block -->
 
 <!-- block:cs-s4 -->
 <section><h2>The fix</h2>
-<ul><li>Wrote down which services live under which manager, so nobody has to guess.</li><li>Stopped the stray process, then let systemd own the service so it starts on boot and restarts on failure.</li></ul></section>
+<ul><li>Documented which services run under which manager.</li><li>Stopped the stray process, then let systemd own the service so it starts on boot and restarts on failure.</li></ul></section>
 <!-- /block -->
 
 <!-- block:cs-s5 -->
