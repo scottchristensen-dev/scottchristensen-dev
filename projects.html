@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Projects — Scott Christensen</title>
-<meta name="description" content="Projects by Scott Christensen: Hermes and the apps built on it (Iris, HIL + Tabula, Epochron, Omnibus, App Ladder), ProReady (tested with a CompTIA A+ course), a home server and a personal automated trading system.">
+<meta name="description" content="Projects by Scott Christensen: Hermes and the apps built on it (Iris, Lynceus, Epochron, Atlas, Omnibus, HIL + Tabula, App Ladder, Career Command, Night Shift), the AI Lab, ProReady with a CompTIA A+ course, a home server and a personal automated trading system.">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/site.js"></script>
@@ -48,8 +48,13 @@
 
 <p><strong>What it does:</strong> A self-hosted platform of AI-assisted tools — website, image and app-building studios, a phone companion app and a job-search hub — running on my own Linux server. Built with Claude under my direction. I directed 2,709 version-controlled changes since Jul 2026, each stage closed with a written handoff (403 so far) and backed by 199 automated test files.</p>
 <details><summary>Stack</summary><p>Python, JavaScript, Linux Mint, systemd, Docker, git, HashiCorp Vault, a private network, Android (Capacitor).</p></details>
-<p><strong>A real problem it solved:</strong> A scanner silently showed zero results during a live phone test. I traced it to a duplicated function name and confirmed 81 results after the fix.</p><p><strong>Built on Hermes:</strong> <a href="case-iris.html">Iris</a> · <a href="case-hil-tabula-friends-edition.html">HIL + Tabula</a> · <a href="case-epochron.html">Epochron</a> · <a href="case-omnibus.html">Omnibus</a> · <a href="case-app-ladder.html">App Ladder</a></p>
+<p><strong>A real problem it solved:</strong> A scanner silently showed zero results during a live phone test. I traced it to a duplicated function name and confirmed 81 results after the fix.</p><p><strong>Built on Hermes:</strong> <a href="case-iris.html">Iris</a> · <a href="case-lynceus.html">Lynceus</a> · <a href="case-epochron.html">Epochron</a> · <a href="case-atlas.html">Atlas</a> · <a href="case-omnibus.html">Omnibus</a> · <a href="case-hil-tabula-friends-edition.html">HIL + Tabula</a> · <a href="case-app-ladder.html">App Ladder</a> · <a href="case-career-command.html">Career Command</a> · <a href="case-night-shift.html">Night Shift</a></p>
 </article>
+<article class="card"><h3>AI Lab</h3>
+<figure><img src="assets/img/ailab-compare-poster.webp" width="960" height="675" loading="lazy" alt="AI Lab comparing three AI models on one task: time, cost, tokens, steps and checks for each."></figure>
+<p><strong>What it does:</strong> Gives one task to several AI models at once, each in its own sandbox, and compares their time, cost and test results side by side. Also makes pictures and short video on my own graphics card. Hard daily spending cap; sensitive projects stay on local models. Built with Claude under my direction.</p>
+<details><summary>Stack</summary><p>Python (standard library only), JavaScript, a sandbox with no network, local open models, Hermes connection.</p></details>
+<p><a class="btn ghost" href="case-ai-lab.html">How the AI Lab works →</a></p></article>
 <article class="card"><h3>ProReady</h3>
 <figure><img src="assets/img/proready-diagram.webp" width="1020" height="1316" loading="lazy" alt="Diagram: the ProReady CompTIA A+ course — 9 exam domains of captioned video lessons across Core 1 (220-1201: hardware, networking, mobile devices, cloud and troubleshooting) and Core 2 (220-1202: operating systems, security, software troubleshooting and procedures), 28 diagrams and 24 games, Next up picks the next step, spaced-repetition review, then two timed 90-question mock exams."></figure>
 <p><strong>What it does:</strong> A study platform for certification exams: multi-subject course packs, spaced-repetition review (FSRS), an instructor review queue and encrypted content storage. Built with Claude under my direction.</p>
@@ -74,22 +79,34 @@
 <!-- /block -->
 <!-- block:built-on-hermes -->
 <section id="built-on-hermes"><h2>Built on Hermes</h2>
-<p>Apps I designed and built through Hermes’ studios, each with its own release and testing routine.</p>
+<p>Apps and tools I designed and built through Hermes’ studios, each with its own release and testing routine.</p>
 <div class="grid"><article class="card"><img src="assets/img/iris-diagram.webp" width="1020" height="1095" loading="lazy" alt=""><h3>Iris</h3>
 <p>Phone companion app — voice notes, photos, GPS trips and screen recording, saved only when the server’s receipt matches.</p>
 <p><a class="btn ghost" href="case-iris.html">Read more →</a></p></article>
+<article class="card"><img src="assets/img/lynceus-queue.webp" width="1100" height="959" loading="lazy" alt=""><h3>Lynceus</h3>
+<p>In-browser code review: runs a project&#x27;s tests in a locked sandbox and ranks functions by risk. 232 unit + 129 browser tests.</p>
+<p><a class="btn ghost" href="case-lynceus.html">Read more →</a></p></article>
+<article class="card"><img src="assets/img/epochron-diagram.webp" width="1020" height="1151" loading="lazy" alt=""><h3>Epochron</h3>
+<p>Android calendar with weather, tides and sky events, plus a big-text Family Edition with read-aloud for my parents.</p>
+<p><a class="btn ghost" href="case-epochron.html">Read more →</a></p></article>
+<article class="card"><h3>Atlas</h3>
+<p>Disk-space map and file manager for Linux, Windows and Android, with a careful duplicate finder and Trash-first deletes.</p>
+<p><a class="btn ghost" href="case-atlas.html">Read more →</a></p></article></div>
+<details class="more"><summary>Show 5 more (Omnibus, HIL + Tabula, App Ladder, Career Command, Night Shift)</summary><div class="grid"><article class="card"><img src="assets/img/omnibus-diagram.webp" width="1020" height="1103" loading="lazy" alt=""><h3>Omnibus</h3>
+<p>Audiobook player with its own sync server, overnight transcription and spoiler-safe story help. 133/133 phone tests.</p>
+<p><a class="btn ghost" href="case-omnibus.html">Read more →</a></p></article>
 <article class="card"><img src="assets/img/friends-diagram.webp" width="1020" height="1085" loading="lazy" alt=""><h3>HIL + Tabula</h3>
 <p>Screenshot and recording bar plus a project notepad. The Friends Edition ships Windows and Linux installers — every Windows build VM-tested first.</p>
 <p><a class="btn ghost" href="case-hil-tabula-friends-edition.html">Read more →</a></p></article>
-<article class="card"><img src="assets/img/epochron-diagram.webp" width="1020" height="1151" loading="lazy" alt=""><h3>Epochron</h3>
-<p>Android calendar with weather, tides and sky events — one network door, closed until you turn weather on.</p>
-<p><a class="btn ghost" href="case-epochron.html">Read more →</a></p></article></div>
-<details class="more"><summary>Show 2 more apps (Omnibus, App Ladder)</summary><div class="grid"><article class="card"><img src="assets/img/omnibus-diagram.webp" width="1020" height="1103" loading="lazy" alt=""><h3>Omnibus</h3>
-<p>Audiobook player with its own sync server, overnight transcription and spoiler-safe story help. 133/133 phone tests.</p>
-<p><a class="btn ghost" href="case-omnibus.html">Read more →</a></p></article>
 <article class="card"><img src="assets/img/ladder-diagram.webp" width="1020" height="1270" loading="lazy" alt=""><h3>App Ladder</h3>
 <p>Health light, file drop, shared lists and push notifications — each built for Linux, Windows and Android.</p>
-<p><a class="btn ghost" href="case-app-ladder.html">Read more →</a></p></article></div></details></section>
+<p><a class="btn ghost" href="case-app-ladder.html">Read more →</a></p></article>
+<article class="card"><h3>Career Command</h3>
+<p>Job-search hub: one master record builds every tailored résumé and cover letter, with a pipeline and a link truth check.</p>
+<p><a class="btn ghost" href="case-career-command.html">Read more →</a></p></article>
+<article class="card"><h3>Night Shift</h3>
+<p>Unattended overnight builds that resume from written handoffs, test their work and leave a morning brief.</p>
+<p><a class="btn ghost" href="case-night-shift.html">Read more →</a></p></article></div></details></section>
 <!-- /block -->
 
 <!-- block:troubleshoot -->
