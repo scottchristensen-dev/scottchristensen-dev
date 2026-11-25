@@ -40,23 +40,23 @@
 <main id="main">
 <!-- block:cs-intro -->
 <section class="hero"><h1>Night Shift</h1>
-<p class="pitch">Automated overnight builds: while I sleep, my server picks up each project where the last session stopped, builds the next small piece, tests it, and leaves me a morning brief.</p>
+<p class="pitch">Unattended overnight build automation: each project resumes from its last written handoff, the next module is built and tested, and a morning report is prepared for review.</p>
 <p class="m">Part of Hermes · Built with Claude under my direction · Python, systemd timers</p>
 <p><a class="btn ghost" href="projects.html">← All projects</a></p></section>
 <!-- /block -->
 
 <!-- block:cs-art -->
-<section><figure class="art loop"><video autoplay muted loop playsinline preload="metadata" width="960" height="540" poster="assets/img/art-nightshift.webp" aria-label="Illustration: a small workshop street at night with the bench lamps still on. Silent looping clip." data-loop><source src="assets/video/loop-nightshift.mp4" type="video/mp4"></video><figcaption>Art made with my AI Lab on local models, with a slow camera move.</figcaption></figure></section>
+<section><figure class="art loop"><video autoplay muted loop playsinline preload="metadata" width="960" height="540" poster="assets/img/art-nightshift.webp" aria-label="Illustration: a small workshop street at night with the bench lamps still on. Silent looping clip." data-loop><source src="assets/video/loop-nightshift.mp4" type="video/mp4"></video><figcaption>Illustration generated with my AI Lab (local models), with an animated camera move.</figcaption></figure></section>
 <!-- /block -->
 
 <!-- block:cs-s1 -->
 <section><h2>How a night works</h2>
-<ul><li>Each project ends its day with a written handoff that names the next module and how to check it.</li><li>In a fixed night window, a systemd timer starts the queued runs — up to 10 a night — each building one small module and running its tests.</li><li>A low-cost second model reviews each run with fresh eyes.</li><li>By morning: a brief with what was built, what failed and the decisions waiting for me, delivered to my phone.</li></ul></section>
+<ul><li>Each project ends its day with a written handoff that names the next module and how to check it.</li><li>In a fixed night window, a systemd timer starts the queued runs — up to 10 a night — each building one small module and running its tests.</li><li>A second, lower-cost model independently reviews each run.</li><li>Each morning: a report of completed work, failures and pending decisions, delivered to my phone.</li></ul></section>
 <!-- /block -->
 
 <!-- block:cs-s2 -->
 <section><h2>Guard rails</h2>
-<ul><li>A nightly spending cap.</li><li>Cleanup is propose-only — nothing is archived or closed until I approve the batch.</li><li>Merges wait for my answer; answered questions are never asked again.</li><li>Lessons from each night are filed so the next night makes fewer mistakes.</li></ul></section>
+<ul><li>A nightly spending cap.</li><li>Cleanup is propose-only — nothing is archived or closed until I approve the batch.</li><li>Merges require my approval; resolved questions are not raised again.</li><li>Lessons from each run are recorded so later runs avoid the same errors.</li></ul></section>
 <!-- /block -->
 </main>
 <footer><p>© Scott Christensen · <a href="mailto:scott@scottchristensen.dev">scott@scottchristensen.dev</a></p><!-- hx:fsocial --><p><span class="social" aria-label="Profiles"><a href="https://github.com/erasmus707bot-dev" rel="me noopener">GitHub</a></span></p><!-- /hx:fsocial -->
