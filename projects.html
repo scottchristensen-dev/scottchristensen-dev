@@ -39,6 +39,7 @@
 <button type="button" class="theme" data-theme-toggle aria-label="Switch light or dark">🌓</button></header>
 <main id="main">
 <h1>Projects</h1>
+<p class="m">Banner art is made with my AI Lab on local models. Screenshots and diagrams show the real work.</p>
 <nav aria-label="On this page"><ul class="jump"><li><a href="#main-projects">Main projects</a></li><li><a href="#built-on-hermes">Built on Hermes</a></li><li><a href="#troubleshoot">How I troubleshoot</a></li><li><a href="#lab-notes">Lab notes</a></li></ul></nav>
 <!-- block:projects -->
 <section id="main-projects"><h2>Main projects</h2>
@@ -56,21 +57,21 @@
 <details><summary>Stack</summary><p>Python (standard library only), JavaScript, a sandbox with no network, local open models, Hermes connection.</p></details>
 <p><a class="btn ghost" href="case-ai-lab.html">How the AI Lab works →</a></p></article>
 <article class="card"><h3>ProReady</h3>
-<figure><img src="assets/img/proready-diagram.webp" width="1020" height="1316" loading="lazy" alt="Diagram: the ProReady CompTIA A+ course — 9 exam domains of captioned video lessons across Core 1 (220-1201: hardware, networking, mobile devices, cloud and troubleshooting) and Core 2 (220-1202: operating systems, security, software troubleshooting and procedures), 28 diagrams and 24 games, Next up picks the next step, spaced-repetition review, then two timed 90-question mock exams."></figure>
+<figure><img src="assets/img/art-proready.webp" width="1200" height="686" loading="lazy" alt=""></figure>
 <p><strong>What it does:</strong> A study platform for certification exams: multi-subject course packs, spaced-repetition review (FSRS), an instructor review queue and encrypted content storage. Built with Claude under my direction.</p>
 <p><strong>First test run:</strong> a full CompTIA A+ course built on it to prove the platform — all 9 exam domains, two timed 90-question mock exams, 28 diagrams and 24 study games.</p>
 <details><summary>Stack</summary><p>Next.js, TypeScript, PostgreSQL, Prisma, systemd, git.</p></details>
 <p><strong>A real problem it solved:</strong> I traced a live outage to a test build written into the production folder while the health check stayed green, restored service, and approved two guards: separate test-build folders and a health check that verifies the build. I also found the backup restore test could pass with every course image missing, and rebuilt it to check every stored file and restore from the off-site copy.</p>
 <p><a class="btn ghost" href="case-proready.html">ProReady and its A+ test course →</a></p></article>
 <article class="card"><h3>Home server</h3>
-<figure><img src="assets/img/homeserver-diagram.webp" width="1020" height="1316" loading="lazy" alt="Diagram: my phone reaches the server over HTTPS on a private network; services run under systemd, secrets in HashiCorp Vault, plus Docker, Ollama and Paperless-ngx."></figure>
+<figure><img src="assets/img/art-homeserver.webp" width="1200" height="686" loading="lazy" alt=""></figure>
 <p><strong>What it does:</strong> A Linux Mint server that runs my apps, Docker services, local AI models and document archiving. Services start on boot under systemd, secrets live in HashiCorp Vault, and my phone reaches it over HTTPS on a private network.</p>
 <details><summary>Stack</summary><p>Linux Mint, systemd, Docker, HashiCorp Vault, a private network, Ollama, Paperless-ngx.</p></details>
 <p><strong>A real problem it solved:</strong> Restarts kept failing with “unit not found” and “start request repeated too quickly.” I found services split across systemd's system and user managers plus a stray process holding a port — fixed both and documented which service lives where.</p>
 <p><strong>Lab notes:</strong> <a href="case-unit-not-found.html">systemd</a> · <a href="case-real-https-from-phone-to-server.html">HTTPS to my phone</a> · <a href="case-docker-and-localhost.html">Docker and localhost</a> · <a href="case-keeping-api-keys-out-of-plain-text.html">Secrets</a> · <a href="case-the-server-that-couldn-t-find-itself.html">DNS trap</a> · <a href="case-works-on-my-machine.html">Works on my machine</a></p>
 </article>
 <article class="card"><h3>Automated trading system (personal)</h3>
-<figure><img src="assets/img/cs03-diagram.webp" width="980" height="799" loading="lazy" alt="A failed price lookup was counted as zero, which set off a false high-risk alarm."></figure>
+<figure><img src="assets/img/art-trading.webp" width="1200" height="686" loading="lazy" alt=""></figure>
 <p><strong>What it does:</strong> A self-hosted system that monitors and manages my brokerage and crypto accounts, with daily caps, kill switches and shadow-first rollouts. Built with Claude under my direction. It started with a 10-day paper-trading trial before going live at one-tenth size.</p>
 <details><summary>Stack</summary><p>Python, SQLite, systemd, cron, Kraken API, Anthropic API.</p></details>
 <p><strong>A real problem it solved:</strong> Repeated false high-risk alerts came from failed price reads being counted as zero. I added a retry and a last-good-value guard, backed by 12 new tests.</p>
@@ -80,31 +81,31 @@
 <!-- block:built-on-hermes -->
 <section id="built-on-hermes"><h2>Built on Hermes</h2>
 <p>Apps and tools I designed and built through Hermes’ studios, each with its own release and testing routine.</p>
-<div class="grid"><article class="card"><img src="assets/img/iris-diagram.webp" width="1020" height="1095" loading="lazy" alt=""><h3>Iris</h3>
+<div class="grid"><article class="card"><img src="assets/img/art-iris.webp" width="1200" height="617" loading="lazy" alt=""><h3>Iris</h3>
 <p>Phone companion app — voice notes, photos, GPS trips and screen recording, saved only when the server’s receipt matches.</p>
 <p><a class="btn ghost" href="case-iris.html">Read more →</a></p></article>
 <article class="card"><img src="assets/img/lynceus-queue.webp" width="1100" height="959" loading="lazy" alt=""><h3>Lynceus</h3>
 <p>In-browser code review: runs a project&#x27;s tests in a locked sandbox and ranks functions by risk. 232 unit + 129 browser tests.</p>
 <p><a class="btn ghost" href="case-lynceus.html">Read more →</a></p></article>
-<article class="card"><img src="assets/img/epochron-diagram.webp" width="1020" height="1151" loading="lazy" alt=""><h3>Epochron</h3>
+<article class="card"><img src="assets/img/art-epochron.webp" width="1200" height="686" loading="lazy" alt=""><h3>Epochron</h3>
 <p>Android calendar with weather, tides and sky events, plus a big-text Family Edition with read-aloud for my parents.</p>
 <p><a class="btn ghost" href="case-epochron.html">Read more →</a></p></article>
-<article class="card"><h3>Atlas</h3>
+<article class="card"><img src="assets/img/art-atlas.webp" width="1200" height="686" loading="lazy" alt=""><h3>Atlas</h3>
 <p>Disk-space map and file manager for Linux, Windows and Android, with a careful duplicate finder and Trash-first deletes.</p>
 <p><a class="btn ghost" href="case-atlas.html">Read more →</a></p></article></div>
-<details class="more"><summary>Show 5 more (Omnibus, HIL + Tabula, App Ladder, Career Command, Night Shift)</summary><div class="grid"><article class="card"><img src="assets/img/omnibus-diagram.webp" width="1020" height="1103" loading="lazy" alt=""><h3>Omnibus</h3>
+<details class="more"><summary>Show 5 more (Omnibus, HIL + Tabula, App Ladder, Career Command, Night Shift)</summary><div class="grid"><article class="card"><img src="assets/img/art-omnibus.webp" width="1200" height="686" loading="lazy" alt=""><h3>Omnibus</h3>
 <p>Audiobook player with its own sync server, overnight transcription and spoiler-safe story help. 133/133 phone tests.</p>
 <p><a class="btn ghost" href="case-omnibus.html">Read more →</a></p></article>
-<article class="card"><img src="assets/img/friends-diagram.webp" width="1020" height="1085" loading="lazy" alt=""><h3>HIL + Tabula</h3>
+<article class="card"><img src="assets/img/art-hil.webp" width="1200" height="686" loading="lazy" alt=""><h3>HIL + Tabula</h3>
 <p>Screenshot and recording bar plus a project notepad. The Friends Edition ships Windows and Linux installers — every Windows build VM-tested first.</p>
 <p><a class="btn ghost" href="case-hil-tabula-friends-edition.html">Read more →</a></p></article>
-<article class="card"><img src="assets/img/ladder-diagram.webp" width="1020" height="1270" loading="lazy" alt=""><h3>App Ladder</h3>
+<article class="card"><img src="assets/img/art-ladder.webp" width="1200" height="686" loading="lazy" alt=""><h3>App Ladder</h3>
 <p>Health light, file drop, shared lists and push notifications — each built for Linux, Windows and Android.</p>
 <p><a class="btn ghost" href="case-app-ladder.html">Read more →</a></p></article>
-<article class="card"><h3>Career Command</h3>
+<article class="card"><img src="assets/img/art-career.webp" width="1200" height="686" loading="lazy" alt=""><h3>Career Command</h3>
 <p>Job-search hub: one master record builds every tailored résumé and cover letter, with a pipeline and a link truth check.</p>
 <p><a class="btn ghost" href="case-career-command.html">Read more →</a></p></article>
-<article class="card"><h3>Night Shift</h3>
+<article class="card"><img src="assets/img/art-nightshift.webp" width="1200" height="686" loading="lazy" alt=""><h3>Night Shift</h3>
 <p>Unattended overnight builds that resume from written handoffs, test their work and leave a morning brief.</p>
 <p><a class="btn ghost" href="case-night-shift.html">Read more →</a></p></article></div></details></section>
 <!-- /block -->
