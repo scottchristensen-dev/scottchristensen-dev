@@ -56,7 +56,7 @@
 
 <!-- block:cs-s3 -->
 <section><h2>The fix</h2>
-<ul><li>Moved the service off Docker onto a host systemd service that starts on boot — its dependencies were light, so the container wasn&#x27;t buying much.</li><li>Kept a second sign-in path, a signed token, that works the same locally or remotely.</li><li>Disabled the old container entry so it couldn&#x27;t be recreated by accident.</li></ul></section>
+<ul><li>Moved the service off Docker onto a host systemd service that starts on boot — its dependencies were minimal, so the container added little value.</li><li>Kept a second sign-in path, a signed token, that works the same locally or remotely.</li><li>Disabled the old container entry so it couldn&#x27;t be recreated by accident.</li></ul></section>
 <!-- /block -->
 
 <!-- block:cs-s4 -->
