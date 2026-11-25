@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lynceus — case study</title>
-<meta name="description" content="[EDIT] One sentence: what Lynceus is and the result.">
+<title>Lynceus — Scott Christensen</title>
+<meta name="description" content="Lynceus: an offline, in-browser code-review tool — runs a project&#x27;s tests in a locked sandbox, ranks functions by risk and explains every score.">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/site.js"></script>
@@ -40,28 +40,33 @@
 <main id="main">
 <!-- block:cs-intro -->
 <section class="hero"><h1>Lynceus</h1>
-<p class="pitch">[EDIT] One line: what it is and who it is for.</p>
+<p class="pitch">A private code-review tool that runs entirely in the browser — load someone else&#x27;s Python or JavaScript, run its tests on your own device, and get a ranked, evidence-based review. No code ever leaves the device.</p>
+<p class="m">Built with Claude under my direction · Svelte 5, TypeScript, Vite, Python in WebAssembly (Pyodide), Web Workers</p>
+<p><a class="btn" href="https://lynceus.scottchristensen.dev/" rel="noopener">Open Lynceus ↗</a></p>
 <p><a class="btn ghost" href="projects.html">← All projects</a></p></section>
 <!-- /block -->
 
-<!-- block:cs-problem -->
-<section><h2>The problem</h2>
-<p>[EDIT] What was going wrong, and for whom.</p></section>
+<!-- block:cs-media -->
+<section><figure><img src="assets/img/lynceus-queue.webp" width="1100" height="959" loading="lazy" alt="Lynceus Queue tab: functions ranked by a 0–100 risk score, with the breakdown of one score into complexity, nesting, side effects, uncovered lines and diff."><figcaption>The Queue: the riskiest functions first, and every point of the score explained. Real screenshot, demo project.</figcaption></figure></section>
 <!-- /block -->
 
-<!-- block:cs-built -->
-<section><h2>What I built</h2>
-<p>[EDIT] What you made and how it works.</p></section>
+<!-- block:cs-s1 -->
+<section><h2>What it does</h2>
+<ul><li>Drag in files or a folder, or paste code and a diff.</li><li>Runs the project&#x27;s own tests in a sandbox with the network switched off, with per-test coverage and time limits.</li><li>Read-first queue: each function gets a 0–100 risk score from six measured factors — complexity, nesting, side effects, uncovered lines, changed in the diff, and ran during a failing test.</li><li>Four reading passes (Lines, Shape, Flow, Intent), a variable lens, extra checks for unused code, duplicates and leaked secrets, and a report you can download or print.</li></ul></section>
 <!-- /block -->
 
-<!-- block:cs-stack -->
-<section><h2>Stack</h2>
-<ul class="tags"><li>[EDIT]</li><li>[EDIT]</li><li>[EDIT]</li></ul></section>
+<!-- block:cs-s2 -->
+<section><figure><img src="assets/img/lynceus-lens.webp" width="1100" height="773" loading="lazy" alt="Lynceus Code tab: each line labelled by role, with the lens showing where one variable is read and written."><figcaption>The Lines pass: every statement labelled by role; the lens shows where a variable is read and written. A planted fake key is masked.</figcaption></figure></section>
 <!-- /block -->
 
-<!-- block:cs-result -->
-<section><h2>The result</h2>
-<p>[EDIT] What changed because of it.</p></section>
+<!-- block:cs-s3 -->
+<section><h2>Privacy by design</h2>
+<ul><li>Code lives in page memory only; closing the tab forgets it. One button clears everything.</li><li>A strict content-security policy, and the test sandbox blocks the network before any loaded code runs.</li><li>Works offline after the first visit. Python support downloads only when you ask for it.</li></ul></section>
+<!-- /block -->
+
+<!-- block:cs-s4 -->
+<section><h2>Testing</h2>
+<ul><li>232 unit tests and 129 end-to-end browser checks passing (v1.1).</li><li>Every push builds, tests and publishes the site automatically.</li></ul></section>
 <!-- /block -->
 </main>
 <footer><p>© Scott Christensen · <a href="mailto:scott@scottchristensen.dev">scott@scottchristensen.dev</a></p><!-- hx:fsocial --><p><span class="social" aria-label="Profiles"><a href="https://github.com/erasmus707bot-dev" rel="me noopener">GitHub</a></span></p><!-- /hx:fsocial -->
