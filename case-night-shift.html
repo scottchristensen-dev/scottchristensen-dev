@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Night Shift — case study</title>
-<meta name="description" content="[EDIT] One sentence: what Night Shift is and the result.">
+<title>Night Shift — Scott Christensen</title>
+<meta name="description" content="Night Shift: unattended overnight build runs that resume from written handoffs, build and test one module each, and deliver a morning brief for approval.">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/site.js"></script>
@@ -40,28 +40,19 @@
 <main id="main">
 <!-- block:cs-intro -->
 <section class="hero"><h1>Night Shift</h1>
-<p class="pitch">[EDIT] One line: what it is and who it is for.</p>
+<p class="pitch">Automated overnight builds: while I sleep, my server picks up each project where the last session stopped, builds the next small piece, tests it, and leaves me a morning brief.</p>
+<p class="m">Part of Hermes · Built with Claude under my direction · Python, systemd timers</p>
 <p><a class="btn ghost" href="projects.html">← All projects</a></p></section>
 <!-- /block -->
 
-<!-- block:cs-problem -->
-<section><h2>The problem</h2>
-<p>[EDIT] What was going wrong, and for whom.</p></section>
+<!-- block:cs-s1 -->
+<section><h2>How a night works</h2>
+<ul><li>Each project ends its day with a written handoff that names the next module and how to check it.</li><li>In a fixed night window, a systemd timer starts the queued runs — up to 10 a night — each building one small module and running its tests.</li><li>A low-cost second model reviews each run with fresh eyes.</li><li>By morning: a brief with what was built, what failed and the decisions waiting for me, delivered to my phone.</li></ul></section>
 <!-- /block -->
 
-<!-- block:cs-built -->
-<section><h2>What I built</h2>
-<p>[EDIT] What you made and how it works.</p></section>
-<!-- /block -->
-
-<!-- block:cs-stack -->
-<section><h2>Stack</h2>
-<ul class="tags"><li>[EDIT]</li><li>[EDIT]</li><li>[EDIT]</li></ul></section>
-<!-- /block -->
-
-<!-- block:cs-result -->
-<section><h2>The result</h2>
-<p>[EDIT] What changed because of it.</p></section>
+<!-- block:cs-s2 -->
+<section><h2>Guard rails</h2>
+<ul><li>A nightly spending cap.</li><li>Cleanup is propose-only — nothing is archived or closed until I approve the batch.</li><li>Merges wait for my answer; answered questions are never asked again.</li><li>Lessons from each night are filed so the next night makes fewer mistakes.</li></ul></section>
 <!-- /block -->
 </main>
 <footer><p>© Scott Christensen · <a href="mailto:scott@scottchristensen.dev">scott@scottchristensen.dev</a></p><!-- hx:fsocial --><p><span class="social" aria-label="Profiles"><a href="https://github.com/erasmus707bot-dev" rel="me noopener">GitHub</a></span></p><!-- /hx:fsocial -->
