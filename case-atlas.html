@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Atlas — case study</title>
-<meta name="description" content="[EDIT] One sentence: what Atlas is and the result.">
+<title>Atlas — Scott Christensen</title>
+<meta name="description" content="Atlas: a cross-platform disk-usage map and file manager with a treemap, a careful duplicate finder and Trash-first deletes.">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/site.js"></script>
@@ -40,28 +40,19 @@
 <main id="main">
 <!-- block:cs-intro -->
 <section class="hero"><h1>Atlas</h1>
-<p class="pitch">[EDIT] One line: what it is and who it is for.</p>
+<p class="pitch">A disk-space map and file manager for Linux, Windows and Android — see what fills a drive, then clean it up safely.</p>
+<p class="m">Built on Hermes · Built with Claude under my direction · Kotlin, Compose Multiplatform</p>
 <p><a class="btn ghost" href="projects.html">← All projects</a></p></section>
 <!-- /block -->
 
-<!-- block:cs-problem -->
-<section><h2>The problem</h2>
-<p>[EDIT] What was going wrong, and for whom.</p></section>
+<!-- block:cs-s1 -->
+<section><h2>What it does</h2>
+<ul><li>Folder sizes and a treemap of the whole drive, with file previews.</li><li>Move, rename and delete — deletes go to the Trash first, and protected system folders are left alone.</li><li>🧬 Duplicates: finds identical files and the same song saved in two places, suggests which copy to keep (most complete first, then quality, cover art and tags), and copies any missing files into the keeper before the rest go to the Trash.</li><li>Every duplicate group is labelled ✅ Safe, 🟡 Check first or ⚠ Copy first, so it&#x27;s clear what is safe to remove.</li></ul></section>
 <!-- /block -->
 
-<!-- block:cs-built -->
-<section><h2>What I built</h2>
-<p>[EDIT] What you made and how it works.</p></section>
-<!-- /block -->
-
-<!-- block:cs-stack -->
-<section><h2>Stack</h2>
-<ul class="tags"><li>[EDIT]</li><li>[EDIT]</li><li>[EDIT]</li></ul></section>
-<!-- /block -->
-
-<!-- block:cs-result -->
-<section><h2>The result</h2>
-<p>[EDIT] What changed because of it.</p></section>
+<!-- block:cs-s2 -->
+<section><h2>Release and testing</h2>
+<ul><li>One codebase, three platforms: a Linux package, an Android app and a Windows installer.</li><li>44 engine tests passing; Windows builds are tested in a virtual machine before release.</li><li>Touch-tested on an Android emulator and approved on a real phone.</li></ul></section>
 <!-- /block -->
 </main>
 <footer><p>© Scott Christensen · <a href="mailto:scott@scottchristensen.dev">scott@scottchristensen.dev</a></p><!-- hx:fsocial --><p><span class="social" aria-label="Profiles"><a href="https://github.com/erasmus707bot-dev" rel="me noopener">GitHub</a></span></p><!-- /hx:fsocial -->
