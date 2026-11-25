@@ -38,12 +38,17 @@ Contact: scott@scottchristensen.dev
 
 ## Pages
 - [About / Résumé](https://scottchristensen.dev/about.html): About Scott Christensen: IT support technician with computer repair experience since 2010. Work history, certifications, skills and résumé download.
+- [AI Lab](https://scottchristensen.dev/case-ai-lab.html): AI Lab: a multi-model AI development environment that runs one task on several models in isolated sandboxes, compares time, cost and test results, and produces software and media under enforced spending limits.
 - [App Ladder](https://scottchristensen.dev/case-app-ladder.html): The App Ladder: small cross-platform utilities, each adding one skill the next one reuses.
+- [Atlas](https://scottchristensen.dev/case-atlas.html): Atlas: a cross-platform disk-usage map and file manager with a treemap, a careful duplicate finder and Trash-first deletes.
+- [Career Command](https://scottchristensen.dev/case-career-command.html): Career Command: a job-search hub with one master record that builds tailored résumés and cover letters, an application pipeline and a truth check on job links.
 - [Why my service couldn't see “localhost” inside Docker](https://scottchristensen.dev/case-docker-and-localhost.html): A Docker lab note: why a localhost check always failed inside a container, and the fix.
 - [Epochron](https://scottchristensen.dev/case-epochron.html): Epochron: an Android calendar with labels, sky events, weather and tides, built privacy-first with a release checklist.
 - [HIL + Tabula Friends Edition](https://scottchristensen.dev/case-hil-tabula-friends-edition.html): HIL + Tabula Friends Edition: offline desktop apps with Windows and Linux installers, tested in a VM before release.
 - [Iris](https://scottchristensen.dev/case-iris.html): Iris: an Android companion app for my home server — voice notes, photos, GPS trips and screen recording, with receipts so nothing is lost.
 - [Keeping API keys out of plain text](https://scottchristensen.dev/case-keeping-api-keys-out-of-plain-text.html): A security lab note: keeping AI provider keys in HashiCorp Vault with no plain-text fallback.
+- [Lynceus](https://scottchristensen.dev/case-lynceus.html): Lynceus: an offline, in-browser code-review tool — runs a project's tests in a locked sandbox, ranks functions by risk and explains every score.
+- [Night Shift](https://scottchristensen.dev/case-night-shift.html): Night Shift: unattended overnight build runs that resume from written handoffs, build and test one module each, and deliver a morning brief for approval.
 - [Omnibus](https://scottchristensen.dev/case-omnibus.html): Omnibus: an Android audiobook player with its own sync server, read-along text and spoiler-safe story help.
 - [ProReady](https://scottchristensen.dev/case-proready.html): ProReady: a certification study platform, tested with a full CompTIA A+ course, study games, diagrams and mock exams.
 - [Ending “cleartext not permitted”](https://scottchristensen.dev/case-real-https-from-phone-to-server.html): A networking lab note: moving a phone app from plain HTTP and a baked-in IP to HTTPS on a private network.
@@ -55,7 +60,7 @@ Contact: scott@scottchristensen.dev
 - [“Works on my machine”](https://scottchristensen.dev/case-works-on-my-machine.html): A web networking lab note: why a dashboard worked on the server but failed from a phone, and the fix.
 - [Zero results, no error](https://scottchristensen.dev/case-zero-results-no-error.html): A scanner showed zero results with no error on a live phone test. A duplicated function name; 81 results after the fix.
 - [Contact](https://scottchristensen.dev/contact.html): Contact Scott Christensen by email at scott@scottchristensen.dev.
-- [Home](https://scottchristensen.dev/): Scott Christensen: IT support technician with hands-on computer repair since 2010, looking for help desk and IT field technician work. CompTIA A+ in progress.
-- [Projects](https://scottchristensen.dev/projects.html): Projects by Scott Christensen: Hermes and the apps built on it (Iris, HIL + Tabula, Epochron, Omnibus, App Ladder), ProReady (tested with a CompTIA A+ course), a home server and a personal automated trading system.
+- [Home](https://scottchristensen.dev/): Scott Christensen: computer and machine repair technician since 2010, now building and operating AI-driven software — applications, automation and a multi-model AI lab on a self-managed Linux server. CompTIA A+ in progress.
+- [Projects](https://scottchristensen.dev/projects.html): Projects by Scott Christensen: Hermes and the apps built on it (Iris, Lynceus, Epochron, Atlas, Omnibus, HIL + Tabula, App Ladder, Career Command, Night Shift), the AI Lab, ProReady with a CompTIA A+ course, a home server and a personal automated trading system.
 
 Sitemap: https://scottchristensen.dev/sitemap.xml
