@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Lab — case study</title>
-<meta name="description" content="[EDIT] One sentence: what AI Lab is and the result.">
+<title>AI Lab — Scott Christensen</title>
+<meta name="description" content="AI Lab: a multi-model workshop that runs the same task on several AI models in sandboxed copies, compares time, cost and checks, and builds software and art under a daily cap.">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/site.js"></script>
@@ -40,28 +40,33 @@
 <main id="main">
 <!-- block:cs-intro -->
 <section class="hero"><h1>AI Lab</h1>
-<p class="pitch">[EDIT] One line: what it is and who it is for.</p>
+<p class="pitch">My multi-model workshop: give one task to several AI models, compare their work side by side, and build software and art with them under a hard spending cap.</p>
+<p class="m">Works with Hermes · Built with Claude under my direction · Python (standard library only), JavaScript</p>
 <p><a class="btn ghost" href="projects.html">← All projects</a></p></section>
 <!-- /block -->
 
-<!-- block:cs-problem -->
-<section><h2>The problem</h2>
-<p>[EDIT] What was going wrong, and for whom.</p></section>
+<!-- block:cs-media -->
+<section><figure><video controls playsinline muted preload="none" width="960" height="674" poster="assets/img/ailab-compare-poster.webp" aria-label="Silent demo, 20 seconds: one task given to three models side by side"><source src="assets/video/ailab-compare-demo.mp4" type="video/mp4"><a href="assets/video/ailab-compare-demo.mp4">Watch the demo (MP4)</a></video><figcaption>Scripted demo run: the real interface and sandbox, with sample model replies. One task, three models, time, cost, tokens and checks side by side.</figcaption></figure></section>
 <!-- /block -->
 
-<!-- block:cs-built -->
-<section><h2>What I built</h2>
-<p>[EDIT] What you made and how it works.</p></section>
+<!-- block:cs-s1 -->
+<section><h2>What it does</h2>
+<ul><li>⚖️ Compare: 2–4 models get the same task, each in its own sandboxed copy of the project with no network, then I see time, cost, tokens, steps and checks passed side by side.</li><li>🤖 Agent loop: plan → write → run → check, with a live preview of the result.</li><li>🎨 Pictures and short video made on my own graphics card with open models — $0 per picture and nothing leaves my server.</li><li>📋 Review: finished work goes to a review list; nothing reaches my main system until I approve it.</li></ul></section>
 <!-- /block -->
 
-<!-- block:cs-stack -->
-<section><h2>Stack</h2>
-<ul class="tags"><li>[EDIT]</li><li>[EDIT]</li><li>[EDIT]</li></ul></section>
+<!-- block:cs-s2 -->
+<section><h2>Cost and privacy rules, enforced in code</h2>
+<ul><li>A daily spending cap ($2 by default) and a $0.50 cap per comparison. Every call is estimated high before it runs, and refused if it would cross the cap.</li><li>Projects marked sensitive can only use models running on my own machine.</li><li>Hosted model calls ask for zero data retention and providers that don&#x27;t train on prompts.</li><li>When connected to Hermes, Hermes holds the API keys and the budget — the Lab never sees a key.</li></ul></section>
 <!-- /block -->
 
-<!-- block:cs-result -->
-<section><h2>The result</h2>
-<p>[EDIT] What changed because of it.</p></section>
+<!-- block:cs-s3 -->
+<section><h2>It can improve itself — safely</h2>
+<p>The Lab can propose changes to its own code, but a separate guard it can&#x27;t touch keeps the last 30 working copies, and every self-change waits for my approval before it goes live.</p></section>
+<!-- /block -->
+
+<!-- block:cs-s4 -->
+<section><h2>By the numbers</h2>
+<ul><li>215 version-controlled changes since 20 Nov 2026.</li><li>61 automated test files.</li><li>Runs standalone or connected to Hermes.</li></ul></section>
 <!-- /block -->
 </main>
 <footer><p>© Scott Christensen · <a href="mailto:scott@scottchristensen.dev">scott@scottchristensen.dev</a></p><!-- hx:fsocial --><p><span class="social" aria-label="Profiles"><a href="https://github.com/erasmus707bot-dev" rel="me noopener">GitHub</a></span></p><!-- /hx:fsocial -->
